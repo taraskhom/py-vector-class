@@ -31,9 +31,9 @@ class Vector:
             start_point: tuple[float, float],
             end_point: tuple
     ) -> Vector:
-        x = end_point[0] - start_point[0]
-        y = end_point[1] - start_point[1]
-        return cls(x, y)
+        x_cor = end_point[0] - start_point[0]
+        y_cor = end_point[1] - start_point[1]
+        return cls(x_cor, y_cor)
 
     def get_length(self) -> float:
         return math.sqrt(self.x ** 2 + self.y ** 2)
